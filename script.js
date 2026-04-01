@@ -287,14 +287,6 @@ function bumpStat(id) {
   el.classList.add("score-pop");
 }
 
-function clearSearch() {
-  const input = document.getElementById("filter-input");
-  if (!input) {
-    return;
-  }
-  input.value = "";
-}
-
 function sortPriorityLane() {
   const list = document.getElementById("priority-lane");
   if (!list) {
