@@ -1,3 +1,5 @@
+import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
+
 // Globals
 const M = 25; // board size
 
@@ -158,7 +160,7 @@ function wireButton(button) {
       selected = null;
     }
     if (!didMatch) {
-      saveState();
+     saveState();
     }
     if (score >= M * (M - 1)) {
       window.alert("You win!!");
