@@ -527,7 +527,6 @@ function checkCategories() {
       }
     }
   }
-  winningScore = M * (M - 1);
 }
 
 function shuffleArray(array) {
