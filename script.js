@@ -1,16 +1,4 @@
-import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
-
-function clearLocalStorage() {
-  // Source - https://stackoverflow.com/a/59081878
-  // Posted by tbenst, modified by community. See post 'Timeline' for change history
-  // Retrieved 2026-03-31, License - CC BY-SA 4.0
-
-  Object.keys(localStorage)
-    .filter(x =>
-      x.startsWith(location.pathname))
-    .forEach(x => 
-      localStorage.removeItem(x));
-}
+import 'https://kim-lan.github.io/github-pages-local-storage/index.js'
 
 // Globals
 const M = 25; // board size
@@ -418,7 +406,7 @@ function shuffleBoard() {
 }
 
 function resetGame() {
-  clearLocalStorage();
+  localStorage.clear();
   score = 0;
   mistakes = 0;
   selected = null;
@@ -549,7 +537,7 @@ function shuffleArray(array) {
 }
 
 function saveState() {
-  clearLocalStorage();
+  localStorage.clear();
 
   localStorage.setItem("hasState", "1");
   localStorage.setItem("score", score + "");
