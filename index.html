@@ -23,14 +23,20 @@
               <span class="shortcut-key" id="last-group-btn"><span class="keycap">1</span> select last group</span>
               <span class="shortcut-key" id="last-item-btn"><span class="keycap">2</span> select last item</span>
               <span class="shortcut-key" id="toggle-sort-btn">enable sort</span>
+              <span class="shortcut-key" id="toggle-mistakes-btn">hide mistakes</span>
             </div>
           </div>
           <div id="status">
-            <span class="stat">score: <span id="score">0</span></span>
-            <span class="stat">mistakes: <span id="mistakes">0</span></span>
-            <label class="sr-only" for="filter-input">Filter words</label>
-            <input id="filter-input" type="search" placeholder="type / to search" autocomplete="off" />
+            <div id="stats">
+              <span class="stat">score: <span id="score">0</span></span>
+              <span class="stat" id="mistakes-container">mistakes: <span id="mistakes">0</span></span>
+            </div>
+            <div>
+              <label class="sr-only" for="filter-input">Filter words</label>
+              <input id="filter-input" type="search" placeholder="type / to search" autocomplete="off" />
+            </div>
           </div>
+        </div>
         </div>
       </header>
       <div class="layout">
@@ -42,7 +48,7 @@
       </div>
       <footer class="page-footer">
         categories by Astrevillea, developed by Kim-Lan and suite<br />
-        <a href="https://github.com/Kim-Lan/astrevillea-25x25">github</a> forked from <a href="https://thomaswc.com/2025.html">thomaswc.com/2025.html</a> and <a href="https://github.com/vessenes/2025is45x45">vessenes/2025is45x45</a>
+        <a href="https://github.com/Kim-Lan/astrevillea-25x25" target="_blank">github</a> forked from <a href="https://thomaswc.com/2025.html" target="_blank">thomaswc.com/2025.html</a> and <a href="https://github.com/vessenes/2025is45x45" target="_blank">vessenes/2025is45x45</a>
       </footer>
     </div>
     <div id="reset-indicator">
